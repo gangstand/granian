@@ -688,7 +688,7 @@ class Granian:
             spawn_target = default_spawners[self.interface]
             if sys.platform == 'win32' and self.workers > 1:
                 self.workers = 1
-                logger.warn(
+                logger.warning(
                     'Due to a bug in Windows unblocking socket implementation '
                     "granian can't support multiple workers on this platform. "
                     'Number of workers will now fallback to 1.'
