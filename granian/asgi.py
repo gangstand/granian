@@ -34,7 +34,7 @@ class LifespanProtocol:
             if self.failure_startup or self.failure_shutdown:
                 return
             self.unsupported = True
-            logger.warn(
+            logger.warning(
                 'ASGI Lifespan errored, continuing without Lifespan support '
                 '(to avoid Lifespan completely use "asginl" interface)'
             )
